@@ -1,0 +1,61 @@
+﻿@model Hero.Assessment.MVC.Web.Models.ContactUs
+@{
+    ViewBag.Title = "Thank You Page";
+}
+<div class="jumbotron">
+    <h1 class="display-4">Thanks for contacting us!</h1>
+    <p class="lead">We will be in touch with you shortly.</p>
+    <hr class="my-4">
+    <p class="lead">
+        @Html.ActionLink("Contact Us", "ContactUs", "Home", new { @class = "btn btn-primary btn-lg", role = "button" })
+    </p>
+</div>
+@if (Model != null)
+{
+    <div>
+        <h2>Contact Information</h2>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FirstName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LastName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PhoneNumber)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ContactMessage)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ContactMessage)
+            </dd>
+
+        </dl>
+    </div>
+}

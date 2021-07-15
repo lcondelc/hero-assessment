@@ -9,7 +9,7 @@
 
 ## Azure App Service
 
-I deployed the assesment in Azure App Service [Click Here](https://hero-assessment.azurewebsites.net/Home/ContactUs) for more details
+I deployed the assesment in Azure App Service [Click Here](https://hero-assessment.azurewebsites.net/Home/ContactUs) for more details.
 
 ## Screenshots
 
